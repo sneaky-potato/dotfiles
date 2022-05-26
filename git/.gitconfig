@@ -1,0 +1,9 @@
+[user]
+	name = sneaky-potato
+	email = ashwanikamal.im421@gmail.com
+	signingkey = E80AAC83B6DE2228
+
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = master
