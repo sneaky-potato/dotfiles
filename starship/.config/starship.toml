@@ -24,6 +24,9 @@ symbol = " "
 
 [directory]
 read_only = " "
+truncation_length = 3
+truncate_to_repo = true
+style = "yellow"
 
 [docker_context]
 symbol = " "
@@ -69,6 +72,9 @@ symbol = " "
 
 [memory_usage]
 symbol = " "
+
+[jobs]
+symbol = ""
 
 [nim]
 symbol = " "
