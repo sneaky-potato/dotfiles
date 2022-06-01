@@ -18,6 +18,7 @@ cd .dotfiles
 
 ## Config reference
 
+- Editor: VS Code
 - Terminal: Alacritty
 - Prompt: Starship
 - Shell: zsh
