@@ -1,0 +1,199 @@
+# alacritty color scheme
+
+schemes:
+  tokyo-night: &tokyo-night # Default colors
+    primary:
+      background: "0x0f111a"
+      foreground: "0xa9b1d6"
+
+    # Normal colors
+    normal:
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x787c99"
+
+    # Bright colors
+    bright:
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
+
+  tokyo-night-storm: &tokyo-night-storm # Default colors
+    primary:
+      background: "0x24283b"
+      foreground: "0xa9b1d6"
+
+    # Normal colors
+    normal:
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x9699a8"
+
+    # Bright colors
+    bright:
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
+  monokai_pro: &monokai_pro
+  # Default colors
+    primary:
+      background: '0x2c2525'
+      foreground: '0xfff1f3'
+
+    # Normal colors
+    normal:
+      black:   '0x2c2525'
+      red:     '0xfd6883'
+      green:   '0xadda78'
+      yellow:  '0xf9cc6c'
+      blue:    '0xf38d70'
+      magenta: '0xa8a9eb'
+      cyan:    '0x85dacc'
+      white:   '0xfff1f3'
+
+    # Bright colors
+    bright:
+      black:   '0x72696a'
+      red:     '0xfd6883'
+      green:   '0xadda78'
+      yellow:  '0xf9cc6c'
+      blue:    '0xf38d70'
+      magenta: '0xa8a9eb'
+      cyan:    '0x85dacc'
+      white:   '0xfff1f3'
+  gruvbox_light: &gruvbox_light
+    # Default colors
+    primary:
+      background: '0xf9f5d7' # hard contrast
+      # background: '0xfbf1c7' # normal
+      foreground: '0x3c3836'
+  
+    # Normal colors
+    normal:
+      black:   '0xfbf1c7'
+      red:     '0xcc241d'
+      green:   '0x98971a'
+      yellow:  '0xd79921'
+      blue:    '0x458588'
+      magenta: '0xb16286'
+      cyan:    '0x689d6a'
+      white:   '0x7c6f64'
+  
+    # Bright colors
+    bright:
+      black:   '0x928374'
+      red:     '0x9d0006'
+      green:   '0x79740e'
+      yellow:  '0xb57614'
+      blue:    '0x076678'
+      magenta: '0x8f3f71'
+      cyan:    '0x427b58'
+      white:   '0x3c3836'
+  gruvbox_dark: &gruvbox_dark
+    # Default colors
+    primary:
+      background: '0x1d2021' # hard contrast
+      # background: '0x282828' # normal contrast
+      foreground: '0xebdbb2'
+
+    # Normal colors
+    normal:
+      black:   '0x282828'
+      red:     '0xcc241d'
+      green:   '0x98971a'
+      yellow:  '0xd79921'
+      blue:    '0x458588'
+      magenta: '0xb16286'
+      cyan:    '0x689d6a'
+      white:   '0xa89984'
+
+    # Bright colors
+    bright:
+      black:   '0x928374'
+      red:     '0xfb4934'
+      green:   '0xb8bb26'
+      yellow:  '0xfabd2f'
+      blue:    '0x83a598'
+      magenta: '0xd3869b'
+      cyan:    '0x8ec07c'
+      white:   '0xebdbb2'
+  bluloco_dark: &bluloco_dark
+    bright:
+      black: "#8f9aae"
+      blue: "#10b1fe"
+      cyan: "#5fb9bc"
+      green: "#3fc56b"
+      magenta: "#ff78f8"
+      red: "#ff6480"
+      white: "#ffffff"
+      yellow: "#f9c859"
+    cursor:
+      cursor: "#ffcc00"
+      text: "#282c34"
+    normal:
+      black: "#41444d"
+      blue: "#3476ff"
+      cyan: "#4483aa"
+      green: "#25a45c"
+      magenta: "#7a82da"
+      red: "#fc2f52"
+      white: "#cdd4e0"
+      yellow: "#ff936a"
+    primary:
+      background: "#282c34"
+      foreground: "#b9c0cb"
+    selection:
+      background: "#b9c0ca"
+      text: "#272b33"
+
+  # Colors (BlulocoLight)
+  bluloco_light: &bluloco_light
+    bright:
+      black: "#676a77"
+      blue: "#0099e1"
+      cyan: "#6d93bb"
+      green: "#3cbc66"
+      magenta: "#ce33c0"
+      red: "#ff6480"
+      white: "#d3d3d3"
+      yellow: "#c5a332"
+    cursor:
+      cursor: "#f32759"
+      text: "#ffffff"
+    normal:
+      black: "#373a41"
+      blue: "#275fe4"
+      cyan: "#27618d"
+      green: "#23974a"
+      magenta: "#823ff1"
+      red: "#d52753"
+      white: "#babbc2"
+      yellow: "#df631c"
+    primary:
+      background: "#f9f9f9"
+      foreground: "#373a41"
+    selection:
+      background: "#daf0ff"
+      text: "#373a41"
+
+colors: *tokyo-night 
