@@ -2,8 +2,13 @@
 	name = sneaky-potato
 	email = ashwanikamal.im421@gmail.com
 	signingkey = E80AAC83B6DE2228
-
+[color]
+	ui = auto
+[core]
+	editor = code --wait
 [commit]
 	gpgsign = true
 [init]
 	defaultBranch = master
+[color "branch"]
+	upstream = cyan
