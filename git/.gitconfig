@@ -2,6 +2,9 @@
 	name = sneaky-potato
 	email = ashwanikamal.im421@gmail.com
 	signingkey = E80AAC83B6DE2228
+[alias]
+	stat = "status -s -b"
+	lol = "log --graph --decorate --oneline"
 [color]
 	ui = auto
 [core]
