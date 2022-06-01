@@ -19,7 +19,7 @@ function success {
 WORK_MACHINE="elmon"
 CURRENT_MACHINE="$(hostname)"
 
-DEFAULT_STOW_PKGS="zsh alacritty dircolors starship"
+DEFAULT_STOW_PKGS="neofetch alacritty dircolors starship"
 
 STOW_PKGS=${STOW_PKGS:=$DEFAULT_STOW_PKGS}
 
