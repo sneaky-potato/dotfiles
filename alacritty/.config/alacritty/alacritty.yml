@@ -1,15 +1,8 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-# Import additional configuration files
-#
-# Imports are loaded in order, skipping all missing files, with the importing
-# file being loaded last. If a field is already present in a previous import, it
-# will be replaced.
-#
-# All imports must either be absolute paths starting with `/`, or paths relative
-# to the user's home directory starting with `~/`.
-#import:
-#  - /path/to/alacritty.yml
+import:
+    - "/home/sneakypotato/.dotfiles/alacritty/.config/alacritty/colours.yml"
+
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -85,7 +78,7 @@ window:
   #title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
-  #dynamic_title: true
+  dynamic_title: true
 
   # Window class (Linux/BSD only):
   #class:
@@ -118,11 +111,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Firacode Nerd Font
-    # family: "Iosevka Nerd Font"
+    family: Iosevka Term
 
     # The `style` can be specified to pick a specific face.
-    style: Light
+    style: Medium
 
   # Bold font face
   bold:
@@ -158,7 +150,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -182,253 +174,6 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
-
-# Colors (Dracula)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '#282a36'
-#     foreground: '#f8f8f2'
-
-#   # Normal colors
-#   normal:
-#     black:   '#000000'
-#     red:     '#ff5555'
-#     green:   '#50fa7b'
-#     yellow:  '#f1fa8c'
-#     blue:    '#caa9fa'
-#     magenta: '#ff79c6'
-#     cyan:    '#8be9fd'
-#     white:   '#bfbfbf'
-
-#   # Bright colors
-#   bright:
-#     black:   '#575b70'
-#     red:     '#ff6e67'
-#     green:   '#5af78e'
-#     yellow:  '#f4f99d'
-#     blue:    '#caa9fa'
-#     magenta: '#ff92d0'
-#     cyan:    '#9aedfe'
-#     white:   '#e6e6e6'
-# colors: # Default colors
-#   primary:
-#     # background: "0x0f111a"
-#     background: '0x002b36'
-#     foreground: "0xa9b1d6"
-#   # Normal colors
-#   normal:
-#     black: "0x32344a"
-#     red: "0xf7768e"
-#     green: "0x9ece6a"
-#     yellow: "0xe0af68"
-#     blue: "0x7aa2f7"
-#     magenta: "0xad8ee6"
-#     cyan: "0x449dab"
-#     white: "0x787c99"
-#   # Bright colors
-#   bright:
-#     black: "0x444b6a"
-#     red: "0xff7a93"
-#     green: "0xb9f27c"
-#     yellow: "0xff9e64"
-#     blue: "0x7da6ff"
-#     magenta: "0xbb9af7"
-#     cyan: "0x0db9d7"
-#     white: "0xacb0d0"
-    
-# Colors (Nord)
-# colors:
-#    # Default colors
-#    primary:
-#      background: '#2E3440'
-#      foreground: '#D8DEE9'
-
-#    # Normal colors
-#    normal:
-#      black:   '#3B4252'
-#      red:     '#BF616A'
-#      green:   '#A3BE8C'
-#      yellow:  '#EBCB8B'
-#      blue:    '#81A1C1'
-#      magenta: '#B48EAD'
-#      cyan:    '#88C0D0'
-#      white:   '#E5E9F0'
-
-#    # Bright colors
-#    bright:
-#      black:   '#4C566A'
-#      red:     '#BF616A'
-#      green:   '#A3BE8C'
-#      yellow:  '#EBCB8B'
-#      blue:    '#81A1C1'
-#      magenta: '#B48EAD'
-#      cyan:    '#8FBCBB'
-#      white:   '#ECEFF4'
-
-# Colors (Nightfly)
-# colors:
-#    # Default colors
-#   primary:
-#      background: '#011627'
-#      foreground: '#acb4c2'
-
-#   cursor:
-#     # text:   '0xf1c1c1'
-#     text: '#fafafa'
-#     # cursor: '#9ca1aa'
-#     cursor: '#e3d18a'
-
-#   selection:
-#     text: '#080808'
-#     background: '#b2ceee'
-
-#    # Normal colors
-#   normal:
-#     black:   '#1d3b53'
-#     red:     '#fc514e'
-#     green:   '#a1cd5e'
-#     yellow:  '#e3d18a'
-#     blue:    '#82aaff'
-#     magenta: '#c792ea'
-#     cyan:    '#7fdbca'
-#     white:   '#a1aab8'
-
-#    # Bright colors
-#   bright:
-#     black:   '#7c8f8f'
-#     red:     '#ff5874'
-#     green:   '#21c7a8'
-#     yellow:  '#ecc48d'
-#     blue:    '#82aaff'
-#     magenta: '#ae81ff'
-#     cyan:    '#7fdbca'
-#     white:   '#d6deeb'
-
-# Colors (Night Owl)
-# colors:
-#    # Default colors
-#   primary:
-#     background: '#011627'
-#     foreground: '#d6deeb'
-
-#   cursor:
-#     text: '#011627'
-#     cursor: '#d6deeb'
-
-#   selection:
-#     background: '#1b90dd'
-
-#    # Normal colors
-#   normal:
-#     black:   '#011627'
-#     red:     '#ef5350'
-#     green:   '#22da6e'
-#     yellow:  '#c5e478'
-#     blue:    '#82aaff'
-#     magenta: '#c792ea'
-#     cyan:    '#21c7a8'
-#     white:   '#ffffff'
-
-#    # Bright colors
-#   bright:
-#     black:   '#575656'
-#     red:     '#ef5350'
-#     green:   '#22da6e'
-#     yellow:  '#ffeb95'
-#     blue:    '#82aaff'
-#     magenta: '#c792ea'
-#     cyan:    '#7fdbca'
-#     white:   '#ffffff'
-
-# alacritty color scheme
-
-schemes:
-  monokai_pro: &monokai_pro
-  # Default colors
-    primary:
-      background: '0x2c2525'
-      foreground: '0xfff1f3'
-
-    # Normal colors
-    normal:
-      black:   '0x2c2525'
-      red:     '0xfd6883'
-      green:   '0xadda78'
-      yellow:  '0xf9cc6c'
-      blue:    '0xf38d70'
-      magenta: '0xa8a9eb'
-      cyan:    '0x85dacc'
-      white:   '0xfff1f3'
-
-    # Bright colors
-    bright:
-      black:   '0x72696a'
-      red:     '0xfd6883'
-      green:   '0xadda78'
-      yellow:  '0xf9cc6c'
-      blue:    '0xf38d70'
-      magenta: '0xa8a9eb'
-      cyan:    '0x85dacc'
-      white:   '0xfff1f3'
-  gruvbox_light: &gruvbox_light
-    # Default colors
-    primary:
-      background: '0xf9f5d7' # hard contrast
-      # background: '0xfbf1c7' # normal
-      foreground: '0x3c3836'
-  
-    # Normal colors
-    normal:
-      black:   '0xfbf1c7'
-      red:     '0xcc241d'
-      green:   '0x98971a'
-      yellow:  '0xd79921'
-      blue:    '0x458588'
-      magenta: '0xb16286'
-      cyan:    '0x689d6a'
-      white:   '0x7c6f64'
-  
-    # Bright colors
-    bright:
-      black:   '0x928374'
-      red:     '0x9d0006'
-      green:   '0x79740e'
-      yellow:  '0xb57614'
-      blue:    '0x076678'
-      magenta: '0x8f3f71'
-      cyan:    '0x427b58'
-      white:   '0x3c3836'
-  gruvbox_dark: &gruvbox_dark
-    # Default colors
-    primary:
-      background: '0x1d2021' # hard contrast
-      # background: '0x282828' # normal contrast
-      foreground: '0xebdbb2'
-
-    # Normal colors
-    normal:
-      black:   '0x282828'
-      red:     '0xcc241d'
-      green:   '0x98971a'
-      yellow:  '0xd79921'
-      blue:    '0x458588'
-      magenta: '0xb16286'
-      cyan:    '0x689d6a'
-      white:   '0xa89984'
-
-    # Bright colors
-    bright:
-      black:   '0x928374'
-      red:     '0xfb4934'
-      green:   '0xb8bb26'
-      yellow:  '0xfabd2f'
-      blue:    '0x83a598'
-      magenta: '0xd3869b'
-      cyan:    '0x8ec07c'
-      white:   '0xebdbb2'
-
-colors: *monokai_pro
 
 # Colors (Tomorrow Night)
 #colors:
@@ -675,6 +420,8 @@ cursor:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
+# shell:
+  # program: /usr/local/bin/zsh
 #shell:
 #  program: /bin/bash
 #  args:
