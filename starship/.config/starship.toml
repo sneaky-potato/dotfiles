@@ -26,7 +26,17 @@ symbol = " "
 read_only = " "
 truncation_length = 3
 truncate_to_repo = true
-style = "yellow"
+style = "#93FFF9"
+
+[[battery.display]]
+threshold = 20
+style = "bold red"
+discharging_symbol = "☠ "
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+discharging_symbol = "☠ "
 
 [docker_context]
 symbol = " "
@@ -40,7 +50,7 @@ symbol = " "
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style) "
 style = "italic purple"
-symbol = " "
+symbol = " "
 
 [git_metrics]
 added_style = "bold blue"
