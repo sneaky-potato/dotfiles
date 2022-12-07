@@ -18,7 +18,7 @@ cd .dotfiles
 
 ### Tip of the iceberg
 
-![snap](./assets/snap.png)
+![snap](/assets/snap.png)
 
 ## Config reference
 
@@ -26,5 +26,5 @@ cd .dotfiles
 - Terminal: Alacritty
 - Prompt: Starship
 - Shell: zsh
-- DE: GNOME 42.1
+- DE: GNOME 43.1
 - Window Manager: Mutter
