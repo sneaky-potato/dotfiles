@@ -134,3 +134,11 @@ export GPG_TTY=$(tty)
 export PROMPT_EOL_MARK=''
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+
+export FLYCTL_INSTALL="/home/sneakypotato/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="$PATH:$(yarn global bin)"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+export WECHALLUSER="sneakypotato"
+export WECHALLTOKEN="635A9-D0D6D-BAC9F-0A86F-9B193-AFA2B"
+
