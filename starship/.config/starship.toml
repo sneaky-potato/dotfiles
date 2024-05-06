@@ -41,6 +41,11 @@ discharging_symbol = "☠ "
 [docker_context]
 symbol = " "
 
+[localip]
+ssh_only = false
+format = '@[$localipv4](bold yellow) '
+disabled = false
+
 [elixir]
 symbol = " "
 
