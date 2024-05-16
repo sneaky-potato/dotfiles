@@ -1,0 +1,43 @@
+# import = ["/home/sneakypotato/.dotfiles/alacritty/.config/alacritty/colors.toml"]
+# import = ["/home/sneakypotato/.config/alacritty/rose-pine-moon.toml"]
+import = ["~/.config/alacritty/colors.toml"]
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 10.0
+
+[font.bold]
+style = "Bold"
+
+#[font.italic]
+#style = "Italic"
+
+[font.normal]
+# family = "MapleMono"
+# family = "JetBrains Mono Nerd Font"
+family = "Iosevka Nerd Font Mono"
+# family = "Firacode Nerd Font"
+# family = "Hack"
+style = "Regular"
+
+[scrolling]
+history = 10000
+
+[window]
+decorations = "none"
+dynamic_padding = false
+dynamic_title = true
+opacity = 0.95
+startup_mode = "Windowed"
+
+[window.padding]
+x = 20
+y = 20
