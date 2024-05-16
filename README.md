@@ -2,19 +2,11 @@
 
 >Gotta keep backed up if I again go out on distro hopping
 
-My current system dotfiles (```elmon``` on Manjaro Linux)
+My current system dotfiles (```elmon``` on Arch Linux)
 
 ## Installing / Getting started
 
-Every file is being managed using [GNU stow](https://www.gnu.org/software/stow/).
-
-File hierarchy has been maintained to reduce hassle.
-
-```shell
-git clone https://github.com/sneaky-potato/dotfiles.git .dotfiles
-cd .dotfiles
-./install.sh
-```
+There's no install script, copy paste files as you need them.
 
 ### Tip of the iceberg
 
@@ -22,9 +14,9 @@ cd .dotfiles
 
 ## Config reference
 
-- Editor: VS Code
+- Editor: Nvim
 - Terminal: Alacritty
 - Prompt: Starship
 - Shell: zsh
-- DE: GNOME 43.1
-- Window Manager: Mutter
+- DE: NULL
+- Window Manager: bspwm
