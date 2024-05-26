@@ -36,16 +36,6 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
-# enable color support of ls and also add handy aliases
-if [ "$TERM" != "dumb" ]; then
-    [ -e "$HOME/.dir_colors" ] && DIR_COLORS="$HOME/.dir_colors"
-    [ -e "$DIR_COLORS" ] || DIR_COLORS=""
-    eval "`dircolors -b $DIR_COLORS`"
-    alias ls='ls --color=auto'
-    #alias dir='ls --color=auto --format=vertical'
-    #alias vdir='ls --color=auto --format=long'
-fi
-
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -62,7 +52,7 @@ fi
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -81,10 +71,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git 
-	z 
-	zsh-syntax-highlighting 
+	git
 	zsh-autosuggestions
+	zsh-syntax-highlighting
 	fzf
 )
 
@@ -107,16 +96,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Color man pages
-export LESS_TERMCAP_mb=$'\E[01;32m'
-export LESS_TERMCAP_md=$'\E[01;32m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;47;34m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;36m'
-export LESS=-R
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -125,20 +104,9 @@ export LESS=-R
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(starship init zsh)"
-eval "$(pyenv init --path)"
-source /usr/share/nvm/init-nvm.sh
-export GPG_TTY=$(tty)
-
-[ -f $HOME/.config/broot/launcher/bash/br ] && source $HOME/.config/broot/launcher/bash/br
 export PROMPT_EOL_MARK=''
+eval "$(starship init zsh)"
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
-
-export FLYCTL_INSTALL="/home/sneakypotato/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-export PATH="$PATH:$(yarn global bin)"
-export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
-export WECHALLUSER="sneakypotato"
-export WECHALLTOKEN="635A9-D0D6D-BAC9F-0A86F-9B193-AFA2B"
-
+export GPG_TTY=$(tty)
+source /usr/share/nvm/init-nvm.sh
