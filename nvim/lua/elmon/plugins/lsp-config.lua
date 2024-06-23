@@ -19,10 +19,20 @@ return {
             local lspconfig = require("lspconfig")
             -- Setup language servers here
             -- 
-            lspconfig.lua_ls.setup({})
-            lspconfig.tsserver.setup({})
-            lspconfig.clangd.setup({})
-            lspconfig.gopls.setup({})
+            local capabilities = require('cmp_nvim_lsp').default_capabilities()
+            lspconfig.lua_ls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.tsserver.setup({
+                capabilities = capabilities
+            })
+            lspconfig.clangd.setup({
+                capabilities = capabilities
+            })
+            lspconfig.gopls.setup({
+                capabilities = capabilities
+            })
+
             vim.keymap.set('n', '?', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
             vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})

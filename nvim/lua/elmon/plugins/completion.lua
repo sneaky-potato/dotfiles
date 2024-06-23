@@ -1,5 +1,12 @@
 return {
     {
+        "L3MON4D3/LuaSnip",
+        -- follow latest release.
+        version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+        -- install jsregexp (optional!).
+        build = "make install_jsregexp"
+    },
+    {
         "hrsh7th/cmp-nvim-lsp"
     },
     {
@@ -18,8 +25,8 @@ return {
                     end,
                 },
                 window = {
-                    -- completion = cmp.config.window.bordered(),
-                    -- documentation = cmp.config.window.bordered(),
+                    completion = cmp.config.window.bordered(),
+                    documentation = cmp.config.window.bordered(),
                 },
                 mapping = cmp.mapping({
                     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
