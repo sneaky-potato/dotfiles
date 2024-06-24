@@ -7,12 +7,11 @@ return {
             "nvim-treesitter/nvim-treesitter-textobjects",
             "windwp/nvim-ts-autotag",
         },
-        
         config = function()
             local configs = require("nvim-treesitter.configs")
             configs.setup({
                 -- Add a language of your choice
-                ensure_installed = {"cpp", "python", "lua", "java", "javascript", },
+                ensure_installed = {"cpp", "python", "lua", "java", "javascript", "vim", "vimdoc"},
                 sync_install = false,
                 ignore_install = { "" }, -- List of parsers to ignore installing
                 highlight = {
