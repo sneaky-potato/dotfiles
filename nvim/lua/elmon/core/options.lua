@@ -22,6 +22,8 @@ opt.smartcase = true
 
 opt.cursorline = true
 
+opt.guicursor = ""
+
 opt.termguicolors = false
 opt.background = "dark"
 opt.signcolumn = "no"

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 notification_timeout=1000
-volume_step=1
-max_volume=100
+volume_step=2
+max_volume=200
 
 function get_volume {
     pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1

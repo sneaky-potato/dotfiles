@@ -6,6 +6,10 @@
 super + Return
 	alacritty
 
+# scratpad
+alt + Return
+    . ~/.config/bspwm/scpad
+
 # program launcher
 super + @space
 	rofi -show combi
@@ -30,6 +34,10 @@ super + {_,shift + }w
 # Rotate tree
 super + shift + {d,a}
     bspc node @/ -C {forward,backward}
+
+# Change orientation
+super + {_,shift +}r
+    bspc node '@parent' -R {_,-}90
 
 # Send to desktop
 super + shift + {1-9,0}
@@ -66,6 +74,9 @@ super + ctrl + {m,x,y,z}
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
+
+alt + {_,shift + }Tab
+    bspc desktop --focus {next,prev}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -132,6 +143,10 @@ super + {Left,Down,Up,Right}
 # custom mappings
 #
 
+# lock the screen
+super + x
+    betterlockscreen -l
+
 # clipboard
 alt + v
     CM_LAUNCHER=rofi clipmenu \
@@ -142,18 +157,20 @@ alt + v
         -theme-str 'listview \{ spacing: 0; \}' \
         -theme-str 'window \{ width: 20em; \}'
 
+# Cycle windows
+# alt + Tab
+#         rofi -show window -window-thumbnail
+
 # help menu
 super + slash
     ~/.config/sxhkd/sxhkd-help
 
 # volume controls
 XF86Audio{Raise,Lower}Volume
-#    pactl set-sink-volume 0 +5%
     ~/.config/sxhkd/volume_brightness.sh volume_{up,down}
 
 # brightness controls
 XF86MonBrightness{Up,Down}
-#    brightnessctl s 9600{+,-}
     ~/.config/sxhkd/volume_brightness.sh brightness_{up,down}
 
 # volume controls
@@ -162,5 +179,4 @@ XF86AudioMute
 
 # full screenshot
 @Print
-    scrot -s $HOME/Pictures/Screenshots/'scrot_%Y-%m-%d_%H-%M-%S.png' -e 'xclip -selection clipboard -target image/png -i $f'; dunstify "Captured and copied to clipboard"
-
+    flameshot gui

@@ -1,10 +1,15 @@
 return {
     {
         "L3MON4D3/LuaSnip",
+        lazy = false,
         -- follow latest release.
         version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
         -- install jsregexp (optional!).
-        build = "make install_jsregexp"
+        build = "make install_jsregexp",
+        dependencies = { "saadparwaiz1/cmp_luasnip" },
+        config = function()
+            require("luasnip.loaders.from_vscode").lazy_load({ paths = "~/.config/nvim/lua/elmon/snippets" })
+        end
     },
     {
         "hrsh7th/cmp-nvim-lsp"
@@ -34,7 +39,8 @@ return {
                     ['<C-Space>'] = cmp.mapping.complete(),
                     ['<C-e>'] = cmp.mapping.abort(),
                     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-                    ['<TAB>'] = cmp.mapping.select_next_item()
+                    ['<TAB>'] = cmp.mapping.select_next_item(),
+                    ['<S-TAB>'] = cmp.mapping.select_prev_item(),
                 }),
                 sources = cmp.config.sources({
                     { name = 'nvim_lsp' },

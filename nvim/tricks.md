@@ -9,4 +9,7 @@
 - pressing o while in visual mode enables you to change and move the other end of visual block
 - viW: selects everything till a white space
 - =ap: indent an entire paragraph, yap, vap
-- 
+- move quickly by skipping sentences using ( and )
+- press * or # when on a word to land on the next occurrence effortlessly
+- use e and b combination to move quickly from word to word, switch to w when required
+- zz: center screen on cursor
