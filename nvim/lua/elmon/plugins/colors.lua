@@ -1,4 +1,12 @@
 return {
+    -- {
+    --     "EdenEast/nightfox.nvim",
+    --     name = "nightfox",
+    --     config = function()
+    --         require("nightfox").setup({transparent = true})
+    --         vim.cmd.colorscheme "carbonfox"
+    --     end
+    -- }
     {
         "catppuccin/nvim",
         name = "catppuccin",

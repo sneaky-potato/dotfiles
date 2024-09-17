@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { 'lua_ls', 'tsserver', 'clangd', 'gopls', 'markdown_oxide', 'pylsp'}
+                ensure_installed = { 'lua_ls', 'tsserver', 'clangd', 'gopls', 'markdown_oxide', 'pylsp', 'jdtls'}
             })
         end
     },
@@ -33,6 +33,9 @@ return {
                 capabilities = capabilities
             })
             lspconfig.pylsp.setup({
+                capabilities = capabilities
+            })
+            lspconfig.jdtls.setup({
                 capabilities = capabilities
             })
 
