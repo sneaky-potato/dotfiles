@@ -23,9 +23,3 @@ Map("i", "<A-k>", "<Esc>:m .-2<cr>==gi")
 Map("v", "<A-j>", ":m '>+1<cr>gv=gv")
 Map("v", "<A-k>", ":m '<-2<cr>gv=gv")
 
--- Select any window using C-hjkl
-Map("n", "<C-h>", "<C-w>h")
-Map("n", "<C-j>", "<C-w>j")
-Map("n", "<C-k>", "<C-w>k")
-Map("n", "<C-l>", "<C-w>l")
-
