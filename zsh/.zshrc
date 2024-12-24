@@ -111,4 +111,4 @@ eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 source /usr/share/nvm/init-nvm.sh
 
-[ -f $HOME/.ssh/.ssh.zsh] && source $HOME/.ssh/.ssh.zsh
+[ -f $HOME/.ssh/.ssh.zsh ] && source $HOME/.ssh/.ssh.zsh
