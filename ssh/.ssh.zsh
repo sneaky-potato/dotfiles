@@ -1,4 +1,5 @@
 SSH_ENV="$HOME/.ssh/agent-environment"
+GITHUB_KEY="$HOME/.ssh/github.key"
 
 function start_agent {
     echo "Initialising new SSH agent..."
@@ -6,7 +7,7 @@ function start_agent {
     echo succeeded
     chmod 600 "$SSH_ENV"
     . "$SSH_ENV" >/dev/null
-    /usr/bin/ssh-add; 
+    /usr/bin/ssh-add $GITHUB_KEY; 
 }
 
 # Source SSH settings, if applicable
