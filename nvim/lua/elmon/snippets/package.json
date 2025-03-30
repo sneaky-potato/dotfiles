@@ -1,0 +1,21 @@
+{
+    "name": "snippets",
+    "contributes": {
+        "snippets": [
+            {
+                "language": [
+                    "plaintext",
+                    "markdown",
+                    "html",
+                    "gloabal",
+                    "all"
+                ],
+                "path": "global.json"
+            },
+            {
+                "language": "cpp",
+                "path": "cpp.json"
+            }
+        ]
+    }
+}

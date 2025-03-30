@@ -6,7 +6,6 @@ return {
         "nvim-tree/nvim-web-devicons",
     },
     config = function()
-        Map("n", "-", ":NvimTreeFocus<cr>", { silent = true, noremap = true })
         require("nvim-tree").setup {
             sort = {
                 sorter = "case_sensitive",
