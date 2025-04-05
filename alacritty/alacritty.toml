@@ -1,6 +1,6 @@
-# import = ["/home/sneakypotato/.dotfiles/alacritty/.config/alacritty/colors.toml"]
-# import = ["/home/sneakypotato/.config/alacritty/rose-pine-moon.toml"]
+[general]
 import = ["~/.config/alacritty/colors.toml"]
+
 [cursor]
 unfocused_hollow = true
 
@@ -17,16 +17,17 @@ size = 10.0
 [font.bold]
 style = "Bold"
 
-#[font.italic]
-#style = "Italic"
+[font.italic]
+style = "Italic"
 
 [font.normal]
 # family = "MapleMono"
 # family = "JetBrains Mono Nerd Font"
-family = "Iosevka Nerd Font Mono"
-# family = "Firacode Nerd Font"
+# family = "Iosevka Nerd Font Mono"
+family = "Iosevka"
 # family = "Hack"
-style = "Regular"
+# family = "Firacode Nerd Font"
+style = "Medium"
 
 [scrolling]
 history = 10000
@@ -40,4 +41,4 @@ startup_mode = "Windowed"
 
 [window.padding]
 x = 20
-y = 20
+y = 10
