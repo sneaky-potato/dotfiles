@@ -6,7 +6,7 @@
 super + Return
 	alacritty
 
-# scratpad
+# scratchpad
 alt + Return
     . ~/.config/bspwm/scpad
 
@@ -75,16 +75,18 @@ super + ctrl + {m,x,y,z}
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-alt + {_,shift + }Tab
-    bspc desktop --focus {next,prev}
-
 # focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
+alt + Tab
+    rofi -modi window -show window -hide-scrollbar -padding 50 -line-padding 4 -auto-select \
+         -kb-cancel "Alt+Escape,Escape" \
+         -kb-accept-entry "!Alt+Alt_L,Return" \
+         -kb-row-down "Alt+Tab,Alt+Down" \
+         -kb-row-up "Alt+ISO_Left_Tab,Alt+Up" \
+         -selected-row 1
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -180,3 +182,7 @@ XF86AudioMute
 # full screenshot
 @Print
     flameshot gui
+
+# rofi calculator
+super + F7
+    rofi -show calc -modi calc -no-show-match -no-sort

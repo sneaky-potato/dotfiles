@@ -15,10 +15,31 @@
 - use e and b combination to move quickly from word to word, switch to w when required
 - zz: center screen on cursor
 
+## :norm is for normal
+- `:norm` is a very powerful command
+Consider this piece of text
+```text
+return {
+    NotFoundError,
+    BadRequestError,
+    ConflictError,
+}
+```
+- visually select the text inside return and run the following `:norm f,i.getMessage()`
+- This will run the jey stroke sequence `f,i.getMessage()` on the selected text, resulting in the following text
+```text
+return {
+    NotFoundError.getMessage(),
+    BadRequestError.getMessage(),
+    ConflictError.getMessage(),
+}
+```
+
 ## g for goat, g for :g/re/p
 An underrated command
 - `:g/re` will print at the bottom of the screen all lines matching pattern `re` (default command `p` is used here)
 - `:g/pattern/normal @a` plays the `a` macro on all lines matching pattern
+- `:g/pattern/normal A.` appends a dot `.` on all lines matching pattern
 - `:g/console/g/two/d` is an example of recursive command, `console` first matches lines containing `console` and then second g filters out matches containing `two` from the earlier matched, then applies `d` command
 - `:g/pattern/command` the following form also works: `:g/pattern1/,/pattern2/command` with this, Vim will apply the command within pattern1 and pattern2
     - `/^$/` matches empty lines (with no character)

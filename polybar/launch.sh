@@ -10,4 +10,8 @@ polybar-msg cmd quit
 echo "---" | tee -a /tmp/polybar1.log 
 polybar tikki 2>&1 | tee -a /tmp/polybar1.log & disown
 
+if [[ $(xrandr -q | grep 'HDMI1 connected') ]]; then
+    polybar brick &
+fi
+
 echo "Bars launched..."
