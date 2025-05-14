@@ -23,9 +23,13 @@ vim.keymap.set("i", "<A-k>", "<Esc>:m .-2<cr>==gi")
 vim.keymap.set("v", "<A-j>", ":m '>+1<cr>gv=gv")
 vim.keymap.set("v", "<A-k>", ":m '<-2<cr>gv=gv")
 
--- Select any window using C-hjkl
-vim.keymap.set("n", "<A-h>", "<C-w>h")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
-vim.keymap.set("n", "<A-l>", "<C-w>l")
+-- Buffer flying
+vim.keymap.set("n", "<C-b>", ":ls<cr>:b<space>")
+
+-- Buffer sprinting
+vim.keymap.set("n", "]b", ":bnext<cr>")
+vim.keymap.set("n", "[b", ":bprev<cr>")
+
+
+
 
